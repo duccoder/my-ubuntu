@@ -1,5 +1,8 @@
 sudo apt-get update && sudo apt-get upgrade -y
 
+#unhide startup items
+sudo sed -i "s/NoDisplay=true/NoDisplay=false/g" /etc/xdg/autostart/*.desktop
+
 # ibus unikey
 sudo apt-get install ibus-unikey -y
 
