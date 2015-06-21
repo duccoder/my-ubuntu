@@ -80,6 +80,9 @@ curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
 chmod +x /usr/local/bin/composer
 
+# enmod mcrypt
+sudo php5enmod mcrypt
+
 # keep bright
 #gedit /etc/rc.local
 #echo 19 > /sys/class/backlight/acpi_video0/brightness
