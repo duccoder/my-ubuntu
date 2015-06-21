@@ -87,6 +87,8 @@ chmod +x /usr/local/bin/composer
 # nodejs
 sudo apt-get install nodejs -y
 sudo apt-get install npm -y
+# chown nodejs
+sudo chown -R `whoami` /usr/local/
 
 # browser sync
 npm install -g browser-sync
