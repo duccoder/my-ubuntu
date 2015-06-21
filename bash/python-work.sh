@@ -7,5 +7,7 @@ sudo apt-get install python3-dev python3-pip build-essential libzmq3-dev
 # ipython
 sudo pip install "ipython[notebook]"
 
-# matplotlib for python3
+# more python3 without pip
 sudo apt-get install python3-matplotlib
+sudo apt-get install python3-scipy
+sudo apt-get install python3-numpy
