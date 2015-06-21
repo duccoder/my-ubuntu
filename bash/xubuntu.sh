@@ -84,5 +84,12 @@ chmod +x /usr/local/bin/composer
 #gedit /etc/rc.local
 #echo 19 > /sys/class/backlight/acpi_video0/brightness
 
+# nodejs
+sudo apt-get install nodejs -y
+sudo apt-get install npm -y
+
+# browser sync
+npm install -g browser-sync
+
 # clean
 sudo apt-get -f install && sudo apt-get autoremove -y && sudo apt-get autoclean -y && sudo apt-get clean -y
