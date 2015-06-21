@@ -90,6 +90,8 @@ sudo apt-get install npm -y
 # chown nodejs
 sudo chown -R `whoami` /usr/local/
 
+sudo ln -s /usr/bin/nodejs /usr/bin/node
+
 # browser sync
 npm install -g browser-sync
 
