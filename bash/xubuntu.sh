@@ -83,6 +83,9 @@ chmod +x /usr/local/bin/composer
 # enmod mcrypt
 sudo php5enmod mcrypt
 
+# install php5-ldap
+sudo apt-get install php5-ldap
+
 # keep bright
 #gedit /etc/rc.local
 #echo 19 > /sys/class/backlight/acpi_video0/brightness
