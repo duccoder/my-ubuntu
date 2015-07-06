@@ -44,34 +44,6 @@ sudo nano /etc/php5/fpm/php.ini
 sudo apt-get install phpmyadmin -y
 sudo ln -s /usr/share/phpmyadmin /usr/share/nginx/html
 sudo nano /etc/nginx/sites-enabled/default
-# server {
-#     listen 80 default_server;
-#     listen [::]:80 default_server ipv6only=on;
-
-#     root /usr/share/nginx/html;
-#     index index.php index.html index.htm;
-
-#     server_name server_domain_name_or_IP;
-
-#     location / {
-#         try_files $uri $uri/ =404;
-#     }
-
-#     error_page 404 /404.html;
-#     error_page 500 502 503 504 /50x.html;
-#     location = /50x.html {
-#         root /usr/share/nginx/html;
-#     }
-
-#     location ~ \.php$ {
-#         try_files $uri =404;
-#         fastcgi_split_path_info ^(.+\.php)(/.+)$;
-#         fastcgi_pass unix:/var/run/php5-fpm.sock;
-#         fastcgi_index index.php;
-#         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-#         include fastcgi_params;
-#     }
-# }
 
 # composer
 sudo apt-get install curl -y
@@ -83,8 +55,11 @@ chmod +x /usr/local/bin/composer
 # enmod mcrypt
 sudo php5enmod mcrypt
 
+# install php5-curl
+sudo apt-get install php5-curl
+
 # install php5-ldap
-sudo apt-get install php5-ldap
+# sudo apt-get install php5-ldap
 
 # keep bright
 #gedit /etc/rc.local
