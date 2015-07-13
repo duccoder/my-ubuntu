@@ -94,13 +94,11 @@ curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
 chmod +x /usr/local/bin/composer
 
-# Chrome
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo dpkg -i google-chrome-stable_current_amd64.deb -y
+# enmod mcrypt
+sudo php5enmod mcrypt
 
-# Dropbox
-wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2015.02.12_amd64.deb
-sudo dpkg -i dropbox_2015.02.12_amd64.deb -y
+# install php5-curl
+sudo apt-get install php5-curl
 
 # keep bright
 #gedit /etc/rc.local
