@@ -84,5 +84,11 @@ sudo apt-get purge apt-xapian-index -y
 # preload
 sudo apt-get install preload -y
 
+# nodejs + bower + gulp
+curl --silent --location https://deb.nodesource.com/setup_0.12 | sudo bash -
+sudo apt-get install nodejs -y
+sudo npm install -g bower
+sudo npm install -g gulp gulp-cli
+
 # clean
 sudo apt-get -f install && sudo apt-get autoremove -y && sudo apt-get autoclean -y && sudo apt-get clean -y
