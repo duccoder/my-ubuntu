@@ -78,5 +78,8 @@ apt-get install php5-dev
 #gedit /etc/rc.local
 #echo 19 > /sys/class/backlight/acpi_video0/brightness
 
+# remove index application
+sudo apt-get purge apt-xapian-index
+
 # clean
 sudo apt-get -f install && sudo apt-get autoremove -y && sudo apt-get autoclean -y && sudo apt-get clean -y
