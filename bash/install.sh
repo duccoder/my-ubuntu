@@ -32,6 +32,11 @@ sudo add-apt-repository ppa:numix/ppa -y
 sudo apt-get update
 sudo apt-get install numix-gtk-theme -y
 
+# stickynotes
+sudo add-apt-repository ppa:umang/indicator-stickynotes
+sudo apt-get update
+sudo apt-get install indicator-stickynotes
+
 # git
 sudo apt-get install git -y
 git config --global user.name "Duc Tran"
