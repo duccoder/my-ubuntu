@@ -37,6 +37,10 @@ sudo add-apt-repository ppa:umang/indicator-stickynotes
 sudo apt-get update
 sudo apt-get install indicator-stickynotes
 
+# install geary
+sudo add-apt-repository ppa:yorba/ppa
+sudo apt-get update && sudo apt-get install geary
+
 # git
 sudo apt-get install git -y
 git config --global user.name "Duc Tran"
