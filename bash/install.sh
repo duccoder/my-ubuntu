@@ -93,6 +93,8 @@ sudo apt-get purge apt-xapian-index -y
 # preload
 sudo apt-get install preload -y
 
+sudo aptitude install build-essential
+
 # nodejs + bower + gulp + browser-sync
 curl --silent --location https://deb.nodesource.com/setup_0.12 | sudo bash -
 sudo apt-get install nodejs -y
