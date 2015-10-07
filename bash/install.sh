@@ -74,6 +74,9 @@ curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
 chmod +x /usr/local/bin/composer
 
+# font adobe source code pro
+git clone -b release https://github.com/adobe-fonts/source-code-pro.git ~/.fonts/adobe-fonts/source-code-pro
+fc-cache -f -v
 # enmod mcrypt
 sudo php5enmod mcrypt
 
