@@ -76,6 +76,7 @@ chmod +x /usr/local/bin/composer
 
 # font adobe source code pro
 git clone -b release https://github.com/adobe-fonts/source-code-pro.git ~/.fonts/adobe-fonts/source-code-pro
+curl -L https://github.com/hbin/top-programming-fonts/raw/master/install.sh | bash
 fc-cache -f -v
 # enmod mcrypt
 sudo php5enmod mcrypt
