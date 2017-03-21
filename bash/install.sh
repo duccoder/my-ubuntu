@@ -6,6 +6,8 @@ sudo sed -i "s/NoDisplay=true/NoDisplay=false/g" /etc/xdg/autostart/*.desktop
 # ibus unikey
 sudo apt-get install ibus-unikey -y
 
+gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('ibus', 'Unikey')]"
+
 # font ms
 sudo apt-get install ttf-mscorefonts-installer -y
 
